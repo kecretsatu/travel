@@ -1,0 +1,148 @@
+/* Sidebar Styles */
+
+
+.sidebar {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 30px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-x:hidden;
+	overflow-y: auto;
+    background: #0d77bd;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    *text-indent: 20px;
+    *line-height: 40px;
+}
+
+.sidebar-nav li label {
+	background:#005d9b;
+	text-align:center;
+	margin:0px;
+}
+
+.sidebar-nav li a, .sidebar-nav li label {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+	padding:8px;
+}
+.sidebar-nav li a .fa, .sidebar-nav li label .fa {
+	margin-right:15px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+
+.body:not(.toggled ) .sidebar-nav li a:hover span{
+	left:30px;
+	position:fixed;
+	z-index:999999;
+	background:#0d77bd;	
+	text-decoration: none;
+	color: #ffffff;
+	margin-top:-8px;
+	padding:8px;
+	
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.body:not(.toggled ) .sidebar-nav li a:hover span:after{
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(156, 43, 38, 0);
+	border-right-color: #0d77bd;
+	border-width: 6px;
+	margin-top: -6px;
+}
+.body:not(.toggled ) .sidebar-nav li a:hover span:before{
+}
+
+.sidebar-nav > .sidebar-brand {
+    *height: 65px;
+    *line-height: 40px;
+	margin-top:9px;
+	margin-bottom:9px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #ffffff;
+	font-size:1.3em;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#xxx.toggled:before{
+	content: "\f177";
+	-webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* @media(min-width:768px) {
+    .body {
+        padding-left: 0;
+    }
+
+    .body.toggled {
+        padding-left: 250px;
+    }
+
+    .sidebar {
+        width: 0;
+    }
+
+    .body.toggled .sidebar {
+        width: 250px;
+    }
+
+    .page-content {
+        padding: 20px;
+        position: relative;
+    }
+
+    .body.toggled .page-content {
+        position: relative;
+        margin-right: 0;
+    }
+}
+ */

@@ -1,0 +1,1 @@
+http://api-sandbox.tiket.com/flight_api/get_flight_data?flight_id=13661923&date=2017-05-23&ret_flight_id=&ret_date=&token=01473684f5a4f1d815fd7eaddfd68f0afad0a439&v=3&output=json

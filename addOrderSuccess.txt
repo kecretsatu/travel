@@ -1,0 +1,1 @@
+{"diagnostic":{"status":200,"elapsetime":"7.5385","memoryusage":"26.18MB","unix_timestamp":1494651243,"confirm":"success","lang":"id","currency":"IDR"},"output_type":"json","login_status":"false","token":"bcf883db4b39958abddfb97da7bc8c215e193623"}

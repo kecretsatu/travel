@@ -1,0 +1,1 @@
+http://api-sandbox.tiket.com/flight_api/all_airport?token=573ecf46f68661d46d6fae3ac734af6656f4af50&v=3&output=json

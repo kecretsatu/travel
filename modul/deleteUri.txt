@@ -1,0 +1,1 @@
+https://api-sandbox.tiket.com/order/delete_order?order_detail_id=43227633&token=e5c3d6ba52ba91e261c86b5b7567647657a2ca13&v=3&output=json

@@ -1,0 +1,63 @@
+-- phpMyAdmin SQL Dump
+-- version 4.1.12
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 15, 2017 at 01:19 PM
+-- Server version: 5.6.16-log
+-- PHP Version: 5.5.11
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `tiketravel`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `order_flight`
+--
+
+CREATE TABLE IF NOT EXISTS `order_flight` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `departure_city` varchar(10) NOT NULL,
+  `departure_city_name` varchar(30) NOT NULL,
+  `arrival_city` varchar(10) NOT NULL,
+  `arrival_city_name` varchar(30) NOT NULL,
+  `real_flight_date` date NOT NULL,
+  `airlines_name` varchar(30) NOT NULL,
+  `flight_number` varchar(20) NOT NULL,
+  `flight_id` varchar(20) NOT NULL,
+  `flight_type` varchar(20) NOT NULL,
+  `contact_person` text NOT NULL,
+  `passenger` text NOT NULL,
+  `token` text NOT NULL,
+  `status` int(11) NOT NULL,
+  `date_saved` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `order_hotel`
+--
+
+CREATE TABLE IF NOT EXISTS `order_hotel` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `hotel_id` varchar(30) NOT NULL,
+  `hotel` text NOT NULL,
+  `room_id` varchar(20) NOT NULL,
+  `room` text NOT NULL,
+  `start_date` varchar(30) NOT NULL,
+  `end_date` varchar(30) NOT NULL,
+  `contact_person` text NOT NULL,
+  `for_someone` int(11) NOT NULL,
+  `contact_person_else` text NOT NULL,
+  `token` text NOT NULL,
+  `status` int(11) NOT NULL,
+  `date_saved` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;

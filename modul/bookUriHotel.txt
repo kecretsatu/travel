@@ -1,0 +1,1 @@
+https://api-sandbox.tiket.com/order/add/hotel?startdate=2017-05-16&night=1&room=1&adult=1&child=0&minstar=0&maxstar=0&facilities=0&locations=0&hotelname=0&is_partner=0&room_id=470112&hasPromo=1&enddate=2017-05-17&room_max_occupancy=2&token=9d0ef098f942e08116227e98c05c2bb4f3a37d9e&v=3&output=json
